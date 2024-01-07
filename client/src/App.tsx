@@ -4,6 +4,7 @@ import Axios from "axios"
 
 function App() {
   const [backend, setBackend] = useState()
+  console.log(backend)
 
   useEffect(() => {
     const getData = async () => {
@@ -13,6 +14,7 @@ function App() {
 
     getData()
   }, [])
+
   return (
     <div className="text-blue-400 text-4xl font-bold">
       <Hero />
